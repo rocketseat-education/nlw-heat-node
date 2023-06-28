@@ -28,7 +28,7 @@ app.use(router);
 
 app.get("/github", (request, response) => {
   response.redirect(
-    `https://github.com/login/oauth/authorize?client_id=${process.env.GITHUB_CLIENT_ID}`
+    `https://github.com/login/oauth/authorize?scope=user&client_id=${process.env.GITHUB_CLIENT_ID}`
   );
 });
 
